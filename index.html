@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> PRASHANT RAJPOOT  2025Free Fire Tournament Entry</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f7f7f7; padding: 20px; }
+  h2 { color: #0b7dda; }
+  form { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  input, select { margin-bottom: 10px; width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+  button { background: #0b7dda; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+  ul { margin-top: 20px; }
+  li { background: #fff; padding: 10px; border-radius: 5px; margin-bottom: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.05); }
+</style>
+</head>
+<body>
+
+<h2>PRASHANT RAJPOOT  2025 Free Fire Tournament Registration</h2>
+
+<form id="tournamentForm">
+  <input type="text" id="playerName" placeholder="Player Name" required>
+  <input type="text" id="playerID" placeholder="Player ID / IGN" required>
+  <input type="text" id="teamName" placeholder="Team Name (Optional)">
+  <select id="role" required>
+    <option value="">Select Role</option>
+    <option value="Captain">Captain</option>
+    <option value="Member">Member</option>
+  </select>
+  <input type="tel" id="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}">
+  <input type="text" id="address" placeholder="Address" required>
+  <button type="submit">Submit Entry</button>
+</form>
+
+<h3>Entries:</h3>
+<ul id="entriesList">
+  <!-- Entries will appear here -->
+</ul>
+
+<script>
+  const form = document.getElementById('tournamentForm');
+  const entriesList = document.getElementById('entriesList');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // page reload nahi hoga
+
+    // Form se value lena
+    const name = document.getElementById('playerName').value;
+    const id = document.getElementById('playerID').value;
+    const team = document.getElementById('teamName').value || "No team";
+    const role = document.getElementById('role').value;
+    const mobile = document.getElementById('mobile').value;
+    const address = document.getElementById('address').value;
+
+    // List item banana
+    const li = document.createElement('li');
+    li.textContent = `Name: ${name}, ID: ${id}, Team: ${team}, Role: ${role}, Mobile: ${mobile}, Address: ${address}`;
+    
+    // List mein add karna
+    entriesList.appendChild(li);
+
+    // Form clear karna
+    form.reset();
+  });
+</script>
+  <h3>Tournament member</h3>
+  <h6>Prashant rajpoot :
+Contact Number: +919259557538</h6>
+   <h6>krishan rajput
+Contact Number:+918586091320</h6>
+   <h6>Nikhil kumar:
+Contact Number: +919761882062</h6>
+</body>
+</html>
